@@ -1,0 +1,257 @@
+html{
+    font-family: 'Baloo Chettan 2', cursive;
+}
+
+body{
+    margin: 0;
+}
+
+#abuelo{
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    width: 100%;
+    height: 85vh;
+    display: grid;
+    background-color: #DB5461;
+}
+
+#dad{
+    background-image: url(background_header.jpg);
+    background-repeat: no-repeat;
+    clip-path: polygon(0% 0, 100% 0%, 100% 100%, 15% 100%);
+    background-size: cover;
+    animation: breath 8s cubic-bezier(0.63, 0.26, 0.4, 0.75) infinite; 
+}
+
+#logo{
+    margin-left: 5%;
+    margin-top: -76vh;
+    width: 9%;
+    float: left;
+}
+
+h1{
+    color: white;
+    margin-left: 8%;
+    margin-top: 31vh;
+    font-size: 38px;
+}
+
+#navbar{
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 100%;
+    display: grid;
+    background-color: white;
+    width: 68%;
+    height: 7vh;
+    text-align: center;
+    text-shadow: 0px 1px 0px grey;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0px 6px 12px -6px black;
+    margin-left: 24%;
+    margin-top: 14vh;
+    font-size: 19px;
+    font-weight: bold;   
+}
+
+#button{
+    box-shadow: 0px 6px 12px -6px black;
+    background-color: white;
+    border-radius: 52px;
+    border: 3px solid #30343F;
+    cursor: pointer;
+    color: #30343F;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px grey;
+    margin-left: 8%;
+    margin-top: 7vh;
+    height: 6vh;
+    width: 21%;
+    text-align: center;
+}
+
+#button:active {
+  background-color: white;
+  box-shadow: 0 5px #666;
+  transform: translateY(6px);
+}
+
+#footer{
+    grid-template-columns: 33% 33% 34%;
+    grid-template-rows: 100%;
+    display: grid;
+    background-color: #30343F;
+    height: 15vh; 
+}
+p{
+    margin: 0;
+    margin-top: 1vh;
+}
+.pfooter1{
+    margin-top: 0px;
+    margin-left: -10%;
+    margin-top: 0vh;
+}
+.pfooter2{
+    margin-left: -7%;
+    margin-top: 0vh;
+
+}
+.pfooter3{
+    margin-left: -8%;
+    margin-top: 0vh;
+}    
+
+
+@keyframes breath {
+    0%   { background-size: 130% auto; }
+    50% { background-size: 140% auto; }
+    100% { background-size: 130% auto; }
+  }
+
+  
+#icon1{
+    width: 8%;
+    padding: 23px 85px;
+}
+    
+
+
+#icon2{
+    width: 8%;
+    padding: 23px 85px;
+}
+
+
+#icon3{
+    width: 8%;
+    
+    padding: 23px 85px;
+}
+
+.iconfooter1{
+    color: white;
+    margin-top: -15vh;
+    margin-left: 34%;
+
+
+}
+
+.iconfooter2{
+    color: white;
+    margin-top: -15vh;
+    margin-left: 34%;
+    
+}
+
+.iconfooter3{
+    color: white;
+    margin-top: -15vh;
+    margin-left: 34%;
+  
+}
+
+.bold1{
+    font-weight: bold !important;
+    margin-top: 6% !important;
+    margin-left: -10%;
+    
+    
+}
+
+.bold2{
+    font-weight: bold !important;
+    margin-top: 6% !important;
+    margin-left: -7%;
+}
+
+.bold3{
+    font-weight: bold !important;
+    margin-top: 6% !important;
+    margin-left: -7%;
+}
+
+
+@media (max-width:768px) {
+    #abuelo{
+        grid-template-columns: 100%;
+        grid-template-rows: 57% 43%;
+        width: 100%;
+        height: 85vh;
+        display: grid;
+        background-color: #DB5461;
+    }
+    #dad{
+        visibility: hidden;
+        
+    }
+
+    #padre{
+        background-image: url(background_header.jpg)!important;
+        background-repeat: no-repeat;
+        clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0% 100%);
+        background-size: cover;
+        animation: breath 8s cubic-bezier(0.63, 0.26, 0.4, 0.75) infinite; 
+    }
+
+    h1{
+        color: white;
+        margin-left: 8%;
+        margin-top: 15vh;
+        font-size: 38px;
+    }
+
+    #logo{
+        margin-left: 5%;
+        margin-top: -76vh;
+        width: 9%;
+        float: left;
+    }
+    #navbar{
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 100%;
+        display: grid;
+        background-color: white !important;
+        width: 68%;
+        height: 7vh;
+        text-align: center;
+        text-shadow: 0px 1px 0px grey;
+        text-decoration: none;
+        cursor: pointer;
+        box-shadow: 0px 6px 12px -6px black;
+        margin-left: 24%;
+        margin-top: 14vh;
+        font-size: 19px;
+        font-weight: bold;   
+        visibility: visible;
+    }
+    #button{
+        box-shadow: 0px 6px 12px -6px black;
+        background-color: white;
+        border-radius: 52px;
+        border: 3px solid #30343F;
+        cursor: pointer;
+        color: #30343F;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        text-shadow: 0px 1px 0px grey;
+        margin-left: 8%;
+        margin-top: 7vh;
+        height: 6vh;
+        width: 21%;
+        text-align: center;
+    }
+    
+    #button:active {
+      background-color: white;
+      box-shadow: 0 5px #666;
+      transform: translateY(6px);
+    }
+
+
+
+}
