@@ -1,2 +1,3 @@
-
-STRANGER-STRINGS/
+.idea/
+vendor/
+.phpunit.result.cache
